@@ -1,4 +1,4 @@
-const SectionHead = (children) => {
+const SectionHead = ({ children }) => {
   return <div className='section-box__head'>{children}</div>;
 };
 

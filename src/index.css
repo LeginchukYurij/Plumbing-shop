@@ -1129,6 +1129,11 @@ img {
   padding: 0;
 }
 
+
+.section-box__head {
+  margin-bottom: 40px;
+}
+
 @media (max-width: 768px) {
   .section-box__head .more {
     display: none;

@@ -9,6 +9,7 @@ module.exports = {
       '@components': resolvePath('./src/components'),
       '@containers': resolvePath('./src/containers'),
       '@assets': resolvePath('./src/assets'),
+      '@lib': resolvePath('./src/lib'),
     },
   },
   // ...
