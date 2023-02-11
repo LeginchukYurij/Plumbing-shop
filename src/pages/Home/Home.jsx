@@ -1,12 +1,17 @@
 import HeroSlider from '@containers/HeroSlider';
 import ProductCard from '@components/ProductCard';
+import Section from '@components/Section';
+import SectionHead from '@components/SectionHead';
 
 const Home = () => {
   return (
     <>
       <HeroSlider />
 
-      <ProductCard />
+      <Section>
+        <SectionHead></SectionHead>
+        <ProductCard />
+      </Section>
 
       <div className='category-section diskounts-section wrapper'>
         <div className='section-head'>
