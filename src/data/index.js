@@ -1,4 +1,4 @@
-import slideImage from '../assets/main-slider.jpg';
+import slideImage from '@assets/main-slider.jpg';
 
 export const heroSlides = [
   {
