@@ -4,7 +4,7 @@ import SectionHead from '@components/SectionHead';
 import Htag from '@components/ui/HTag';
 import Button from '@components/ui/Button/Button';
 
-const WeekDeals = () => {
+const WeekDealsContainer = () => {
   return (
     <Section>
       <SectionHead>
@@ -16,4 +16,4 @@ const WeekDeals = () => {
   );
 };
 
-export default WeekDeals;
+export default WeekDealsContainer;

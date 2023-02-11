@@ -10,6 +10,7 @@ module.exports = {
       '@containers': resolvePath('./src/containers'),
       '@assets': resolvePath('./src/assets'),
       '@lib': resolvePath('./src/lib'),
+      '@hooks': resolvePath('./src/hooks'),
     },
   },
   // ...
