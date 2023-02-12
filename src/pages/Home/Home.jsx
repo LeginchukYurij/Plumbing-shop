@@ -1,5 +1,6 @@
 import HeroSliderContainer from '@containers/HeroSliderContainer';
 import WeekDealsContainer from '@containers/WeekDealsContainer';
+import PopularCategoriesContainer from '@containers/PopularCategoriesContainer/PopularCategoriesContainer';
 
 const Home = () => {
   return (
@@ -8,105 +9,8 @@ const Home = () => {
 
       <WeekDealsContainer />
 
-      <div className='category-section popular-section wrapper'>
-        <div className='section-head'>
-          <h2 className='section-title'>Популярные категории</h2>
-          <a
-            className='accent-btn'
-            href='#'>
-            Все категории
-          </a>
-        </div>
-        <div className='category-section-body'>
-          <div className='tiles-slider swiper'>
-            <div className='swiper-wrapper'>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t1.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Душевые кабины</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t2.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Раковины</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t3.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Душ</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t4.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Унитазы</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t5.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Смесители</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-              <div className='swiper-slide'>
-                <a
-                  className='tile'
-                  href='#'>
-                  <div
-                    className='tile-img'
-                    style={{ backgroundImage: 'url(./img/t6.jpg)' }}></div>
-                  <div className='tile-content'>
-                    <h3>Ванны</h3>
-                    <button className='w-btn'>Смотреть</button>
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <a
-          className='accent-btn more-link more-link--mob'
-          href='#'>
-          Смотреть все
-        </a>
-      </div>
+      <PopularCategoriesContainer />
+
       <div className='category-section stock-section wrapper'>
         <div className='section-head'>
           <h2 className='section-title'>Акционные предложения</h2>

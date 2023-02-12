@@ -2,6 +2,7 @@ import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
 export const Button = ({
+  skin = 'dark',
   href = null,
   type = 'button',
   className,
@@ -10,7 +11,10 @@ export const Button = ({
   if (href) {
     return (
       <Link
-        className={cn('accent-btn', className)}
+        className={cn(className, {
+          'accent-btn': skin === 'dark',
+          'w-btn': skin === 'light',
+        })}
         to={href}>
         {children}
       </Link>
