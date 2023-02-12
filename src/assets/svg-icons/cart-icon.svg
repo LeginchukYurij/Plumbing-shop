@@ -1,0 +1,33 @@
+<svg
+              width='25'
+              height='24'
+              viewBox='0 0 25 24'
+              fill='none'
+              xmlns='http://www.w3.org/2000/svg'>
+              <path
+                d='M6.7198 7L6.7198 7H21.2802L19.6802 15L8.3198 15L6.7198 7Z'
+                stroke='white'
+                strokeWidth='2'
+                strokeLinejoin='round'
+              />
+              <path
+                d='M6.18937 4.75746L5.21922 5V5L6.18937 4.75746ZM2.5 3C1.94772 3 1.5 3.44772 1.5 4C1.5 4.55228 1.94772 5 2.5 5V3ZM7.97014 7.75746L7.15951 4.51493L5.21922 5L6.02986 8.24254L7.97014 7.75746ZM5.21922 3H2.5V5H5.21922V3ZM7.15951 4.51493C6.93692 3.62459 6.13696 3 5.21922 3V5L5.21922 5L7.15951 4.51493Z'
+                fill='white'
+              />
+              <circle
+                cx='10.5'
+                cy='19'
+                r='1'
+                fill='#1D1D1F'
+                stroke='white'
+                strokeWidth='2'
+              />
+              <circle
+                cx='17.5'
+                cy='19'
+                r='1'
+                fill='#1D1D1F'
+                stroke='white'
+                strokeWidth='2'
+              />
+            </svg>

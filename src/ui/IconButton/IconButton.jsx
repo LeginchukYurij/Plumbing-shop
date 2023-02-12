@@ -1,11 +1,16 @@
-import cn from 'classnames';
 import { Link } from 'react-router-dom';
+import cn from 'classnames';
 
-const Button = ({ href = null, type = 'button', className, children }) => {
+export const IconButton = ({
+  href = null,
+  type = 'button',
+  className,
+  children,
+}) => {
   if (href) {
     return (
       <Link
-        className={cn('accent-btn', className)}
+        className={cn('icon-btn', className)}
         to={href}>
         {children}
       </Link>
@@ -15,10 +20,8 @@ const Button = ({ href = null, type = 'button', className, children }) => {
   return (
     <button
       type={type}
-      className={cn('accent-btn', className)}>
+      className={cn('icon-btn', className)}>
       {children}
     </button>
   );
 };
-
-export default Button;

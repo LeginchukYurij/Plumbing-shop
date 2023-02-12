@@ -1,0 +1,1 @@
+export { sliderBreakpoints } from './sliderBreakpoints';

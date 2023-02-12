@@ -9,6 +9,8 @@ const Slider = ({
   usePagination = false,
   spaceBetween = 30,
   slideComponent: Slide,
+  slidesPerView = 1,
+  breakpoints = null,
   className,
 }) => {
   const navigationPrevRef = useRef(null);
@@ -29,6 +31,8 @@ const Slider = ({
     <Swiper
       modules={modules}
       spaceBetween={spaceBetween}
+      slidesPerView={slidesPerView}
+      breakpoints={breakpoints}
       navigation={
         useNavigation && {
           prevEl: navigationPrevRef.current,
@@ -42,10 +46,10 @@ const Slider = ({
         }
       }
       onBeforeInit={(swiper) => {
-        swiper.params.navigation.prevEl =
-          useNavigation && navigationPrevRef.current;
-        swiper.params.navigation.nextEl =
-          useNavigation && navigationNextRef.current;
+        if (useNavigation) {
+          swiper.params.navigation.prevEl = navigationPrevRef.current;
+          swiper.params.navigation.nextEl = navigationNextRef.current;
+        }
       }}
       className={className}>
       {data &&

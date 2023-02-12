@@ -9,7 +9,7 @@ export const useAxios = (axiosParams) => {
   const fetchData = async (params) => {
     try {
       const result = await axios.request(params);
-      setResponce(result.data);
+      setResponce(result.data.data);
     } catch (err) {
       setError(err);
     } finally {

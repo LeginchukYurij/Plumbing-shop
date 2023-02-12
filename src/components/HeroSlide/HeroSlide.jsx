@@ -1,3 +1,5 @@
+import { Button } from '@ui';
+
 const HeroSlide = ({ data }) => {
   const { img, title, href } = data;
 
@@ -7,11 +9,8 @@ const HeroSlide = ({ data }) => {
       style={{ backgroundImage: `url(${img})` }}>
       <div className='m-slide-title'>
         {title}
-        <a
-          className='accent-btn'
-          href={href}>
-          Дивитися
-        </a>
+
+        <Button href={href}>Дивитися</Button>
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-const Htag = ({ level, children, className }) => {
+export const Htag = ({ level, children, className }) => {
   switch (level) {
     case 1:
       return <h1 className={className}>{children}</h1>;
@@ -16,5 +16,3 @@ const Htag = ({ level, children, className }) => {
       return <span className={className}>{children}</span>;
   }
 };
-
-export default Htag;
