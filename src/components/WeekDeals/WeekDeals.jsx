@@ -4,7 +4,7 @@ import ProductCard from '@components/ProductCard';
 import Section from '@components/Section';
 import SectionHead from '@components/SectionHead';
 import { Htag, Button } from '@ui';
-import CardsSliderContainer from '@components/CardsSliderContainer';
+import SliderContainer from '@components/SliderContainer';
 import Slider from '@components/Slider/Slider';
 
 const WeekDeals = ({ title, slug, products }) => {
@@ -15,7 +15,7 @@ const WeekDeals = ({ title, slug, products }) => {
         <Button href={`/category/${slug}`}>Показати все</Button>
       </SectionHead>
 
-      <CardsSliderContainer>
+      <SliderContainer type='products'>
         <Slider
           data={products}
           className='cards-slider'
@@ -25,7 +25,7 @@ const WeekDeals = ({ title, slug, products }) => {
           spaceBetween={40}
           breakpoints={sliderBreakpoints.get('products-slider')}
         />
-      </CardsSliderContainer>
+      </SliderContainer>
     </Section>
   );
 };

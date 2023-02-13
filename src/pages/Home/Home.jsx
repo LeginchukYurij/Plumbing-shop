@@ -1,6 +1,7 @@
 import HeroSliderContainer from '@containers/HeroSliderContainer';
 import WeekDealsContainer from '@containers/WeekDealsContainer';
 import PopularCategoriesContainer from '@containers/PopularCategoriesContainer/PopularCategoriesContainer';
+import PromotionOffersContainer from '../../containers/PromotionOffersContainer/PromotionOffersContainer';
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <WeekDealsContainer />
 
       <PopularCategoriesContainer />
+
+      <PromotionOffersContainer />
 
       <div className='category-section stock-section wrapper'>
         <div className='section-head'>
@@ -33,8 +36,8 @@ const Home = () => {
                       alt='#'
                     />
                   </div>
-                  <h4 className='news-title'>Товары месяца</h4>
-                  <p className='news-excerpt'>
+                  <h4 className='news-card__title'>Товары месяца</h4>
+                  <p className='news-card__excerpt'>
                     В июле даем скидку 7% на душевые гарнитуры по промокоду
                     ИЮЛЬ21
                   </p>

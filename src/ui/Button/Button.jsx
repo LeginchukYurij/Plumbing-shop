@@ -24,7 +24,10 @@ export const Button = ({
   return (
     <button
       type={type}
-      className={cn('accent-btn', className)}>
+      className={cn(className, {
+        'accent-btn': skin === 'dark',
+        'w-btn': skin === 'light',
+      })}>
       {children}
     </button>
   );

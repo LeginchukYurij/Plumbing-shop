@@ -15,8 +15,6 @@ const PopularCategories = ({ data, className }) => {
         {data.map((tile) => {
           const { slug, title, thumbnail } = tile?.attributes;
 
-          console.log(slug, title, thumbnail.data[0].attributes.url);
-
           return (
             <li key={uniqid()}>
               <Tile
