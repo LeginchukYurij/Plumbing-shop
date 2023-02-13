@@ -23,7 +23,7 @@ const PromotionOffersContainer = () => {
     <PromotionOffers
       title='Акційні пропозиції'
       slug='promotional-offers'
-      offers={offers}
+      offers={offers.slice(0, 3)}
     />
   );
 };
