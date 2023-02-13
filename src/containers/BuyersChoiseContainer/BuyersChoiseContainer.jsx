@@ -2,12 +2,12 @@ import qs from 'qs';
 import { useAxios } from '@hooks/useAxios';
 import CategoryProductsSlider from '@components/CategoryProductsSlider';
 
-const WeekDealsContainer = () => {
+const BuyersChoiseContainer = () => {
   const query = qs.stringify(
     {
       filters: {
         slug: {
-          $eq: 'week-deels',
+          $eq: 'buyers-choise',
         },
       },
 
@@ -46,4 +46,4 @@ const WeekDealsContainer = () => {
   );
 };
 
-export default WeekDealsContainer;
+export default BuyersChoiseContainer;

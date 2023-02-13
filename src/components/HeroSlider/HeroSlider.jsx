@@ -1,6 +1,6 @@
 import { heroSlides } from '../../data';
 import Slider from '@components/Slider';
-import HeroSlide from '@components/HeroSlide';
+import HeroSlide from './HeroSlide';
 
 const HeroSlider = () => {
   return (

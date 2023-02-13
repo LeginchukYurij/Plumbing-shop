@@ -2,12 +2,12 @@ import { sliderBreakpoints } from '@utils';
 
 import ProductCard from '@components/ProductCard';
 import Section from '@components/Section';
-import SectionHead from '@components/SectionHead';
+import SectionHead from '@components/Section/SectionHead';
 import { Htag, Button } from '@ui';
 import SliderContainer from '@components/SliderContainer';
 import Slider from '@components/Slider/Slider';
 
-const WeekDeals = ({ title, slug, products }) => {
+const CategoryProductsSlider = ({ title, slug, products }) => {
   return (
     <Section>
       <SectionHead>
@@ -30,4 +30,4 @@ const WeekDeals = ({ title, slug, products }) => {
   );
 };
 
-export default WeekDeals;
+export default CategoryProductsSlider;

@@ -1,6 +1,6 @@
 import uniqid from 'uniqid';
 import Section from '@components/Section';
-import SectionHead from '@components/SectionHead';
+import SectionHead from '@components/Section/SectionHead';
 import NewsCard from '@components/NewsCard';
 import { Htag, Button, Grid } from '@ui';
 

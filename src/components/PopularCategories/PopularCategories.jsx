@@ -1,7 +1,7 @@
 import uniqid from 'uniqid';
 
 import Section from '@components/Section';
-import SectionHead from '@components/SectionHead';
+import SectionHead from '@components/Section/SectionHead';
 import { Htag, Tile } from '@ui';
 
 const PopularCategories = ({ data, className }) => {
